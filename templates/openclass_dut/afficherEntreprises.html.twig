@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<h1>Cette page afficheraa laa liste des entreprises proposant un stage </h1>
+
+<ul>
+  {% for stage in stages %}
+    <li> {{stage.entreprises.nom}} </li>
+  {% endfor %}
+</ul>
+{% endblock %}

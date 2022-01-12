@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<h1> Cette page affichera la liste des formations de l'IUT </h1>
+
+<ul>
+  {% for formation in formations %}
+    <li> {{formation.nom}} </li>
+  {% endfor %}
+</ul>
+
+{% endblock %}
